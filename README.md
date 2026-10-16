@@ -26,8 +26,8 @@ It is compliant with the [OSI Open Source AI Definition](https://opensource.org/
 
 ```bash
 # 1. Clone
-git clone https://opensource.unicc.org/un/itu/genie-ai.git
-cd genie-ai
+git clone https://github.com/premjithbenny/Genie-AI.git
+cd Genie-AI
 
 # 2. Configure (secrets: ARANGO_PASSWORD, KEYCLOAK_ADMIN_PASSWORD,
 #    KEYCLOAK_CLIENT_SECRET, HUGGING_FACE_HUB_TOKEN, VLLM_API_KEY, ...)
@@ -35,51 +35,5 @@ cp env .env && $EDITOR .env
 
 # 3. Deploy
 docker compose up -d                                  # core services
-docker compose --profile opea --profile gpu-models up -d   # full stack
-docker compose --env-file .env --env-file env.t4 --profile opea --profile gpu-models up -d   # NVIDIA T4
-```
 
-Access the Web UI at **https://localhost/** and the API docs at **/api-docs**.
 
-For the complete procedure (GPU setup, Swarm, Ansible, knowledge-base population), read the [Installation & Configuration Guide](https://genie-ai-7e342b.opensource.unicc.org/docs/deployment/install-guide/).
-
----
-
-## Documentation
-
-The full documentation lives on the **[GENIE.AI Docs site](https://genie-ai-7e342b.opensource.unicc.org/)** — architecture, RAG pipeline, knowledge-base management, deployment, operations, observability, and API contracts. Start by audience:
-
-| You are… | Start here |
-|---|---|
-| Evaluating / deciding | [About](https://genie-ai-7e342b.opensource.unicc.org/about/) + [Project overview](https://genie-ai-7e342b.opensource.unicc.org/docs/core/project-overview/) |
-| Deploying / operating | [Deployment](https://genie-ai-7e342b.opensource.unicc.org/docs/deployment/) + [Operations](https://genie-ai-7e342b.opensource.unicc.org/docs/operations/) |
-| Managing the knowledge base | [Knowledge base](https://genie-ai-7e342b.opensource.unicc.org/docs/knowledge-base/) |
-| Developing / integrating | [Architecture](https://genie-ai-7e342b.opensource.unicc.org/docs/architecture/) + [RAG pipeline](https://genie-ai-7e342b.opensource.unicc.org/docs/rag/) |
-
-In this repository: [CONTRIBUTING.md](CONTRIBUTING.md) · [STANDARDS.md](STANDARDS.md) · [CLA.md](CLA.md) · [THIRD_PARTY.md](THIRD_PARTY.md) · [Code Management Process](UNICC-ITU-Genie-AI%20Code%20Management%20Process.md) · [`site/`](./site) (docs source) · [`docs/`](./docs) (internal engineering docs).
-
----
-
-## Contributing
-
-Contributions are welcome. Before contributing, read and accept the [CLA](CLA.md), follow [CONTRIBUTING.md](CONTRIBUTING.md) and [STANDARDS.md](STANDARDS.md), and respect the [Code Management Process](UNICC-ITU-Genie-AI%20Code%20Management%20Process.md). Comply with [THIRD_PARTY.md](THIRD_PARTY.md) for dependencies.
-
-## License
-
-Apache License 2.0 — see [LICENSE](LICENSE).
-
-## Resources
-
-- [AI for Good — Open-Source AI for Digital Public Goods track](https://aiforgood.itu.int/eventcat/discovery-open-source-ai-for-digital-public-goods/)
-- [ITU Open Source Programme Office (OSPO)](https://www.itu.int/en/ITU-D/ICT-Applications/Pages/Initiatives/ITU_OSPO/About.aspx)
-- [ITU Initiative on Open Source AI for Public Services](https://www.itu.int/en/ITU-D/ICT-Applications/Pages/Initiatives/ITU_OSPO/Open-Source_AI_for_Public_Services/About_the_Initiative.aspx)
-- [OPEA — Open Platform for Enterprise AI](https://opea.dev)
-- [GovStack — Digital Public Infrastructure](https://specs.govstack.global)
-- [Multi-stakeholder working group (Confluence)](https://osaips.atlassian.net/wiki/external/ZjA2MjBhMWM1NDQ4NDFhY2EzNTRiYjZjMWNjNjI3NjQ)
-
----
-
-**Maintained by:** ITU (International Telecommunication Union) · **License:** Apache-2.0
-=======
-# Genie-AI
->>>>>>> 4061057eed606e9a5a2285ef0220343febb4b303
