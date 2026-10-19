@@ -31,7 +31,7 @@ cd Genie-AI
 
 # 2. Configure (secrets: ARANGO_PASSWORD, KEYCLOAK_ADMIN_PASSWORD,
 #    KEYCLOAK_CLIENT_SECRET, HUGGING_FACE_HUB_TOKEN, VLLM_API_KEY, ...)
-cp env .env && $EDITOR .env
+nano .env
 
 # 3. Deploy
 docker compose up -d                                  # core services
